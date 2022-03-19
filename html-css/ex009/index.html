@@ -1,47 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta author="author" content="Carlos Gabriel">
+    <meta name="author" content="Carlos Gabriel">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte</h2>
-    <p>O comando <code>document.getElementById("teste")</code> é escrito em linguagem Java.</p>
-    <!-- Não identa -->
-    <code>
-        nume = int(input("Digite um número: "))
-        if nume % 2 == 0:
-            print(f'O número {num} é PAR')
-        else:
-            print{f'O número {num} é ÍMPAR}
-        print{'Fim do programa.'}
-    </code>
-    <!-- Identa -->
-    <pre>
-        <code>
-    num = int(input("Digite um número: "))
-    if nume % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        print{f'O número {num} é ÍMPAR}
-    print{'Fim do programa.'}
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo, <q>o computador é um burro muito rápido</q>.</p>
-    <h2>Citações completas</h2>
-    <p>Segundo Jeff Noble, no seu livreo HTML para leigos:</p>
-    <blockquote cite="Endereço de onde tirou a frase">
-        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em <abbr title="HyperText Markup Language">HTML</abbr>.</bdo></p>
-    <p><bdo dir="ltr">Estou aprendendo a criar coisas em <abbr title="HyperText Markup Language">HTML</abbr>.</bdo></p>
+    <h1>Trabalhando com Listas:</h1>
+    <h2>Listas ordernada:</h2>
+    <ol type="I"> <!-- types = 1, A, a, I, i -->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas:</h2>
+    <ul type="square"> <!-- types = disc, circle, square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h2>Minhas linguagens favoritas:</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol>
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Meu jogos favoritos:</h2>
+    <ol>
+        <li>Nintendo 64:</li>
+        <ul type="disc">
+            <li>Star Wars: Shadow of the Empire</li>
+            <li>Star Fox 64</li>
+            <li>WipeOut 64</li>
+            <li>Castlevania 64</li>
+            <li>Tarzan</li>
+            <li>007: Golden Eye</li>
+            <li>Resident Evil 2</li>
+        </ul>
+        <li>PlayStation 2:</li>
+        <ul type="disc">
+            <li>Resident Evil 4</li>
+            <li>Red Dead Revolver</li>
+            <li>Shadow of Rome</li>
+            <li>Yu-Gi-Oh! Capsule Monster Coliseum</li>
+            <li>Obscure</li>
+        </ul>
+        <li>Xbox 360:</li>
+        <ul type="disc">
+            <li>Halo</li>
+            <ul>
+                <li>Halo: Combat Evolved</li>
+                <li>Halo 3</li>
+                <li>Halo 3: ODST</li>
+            </ul>
+            <li>Tomb Raider (2013)</li>
+            <li>Saints Row 4</li>
+            <li>Gears of War 2</li>
+            <li>Dead Space 2</li>
+            <li>Lost Odyssey</li>
+            <li>Metro: Last Light</li>
+        </ul>
+        <li>PlayStation 4:</li>
+        <ul type="disc">
+            <li>Bloodborne</li>
+            <li>The Last of Us</li>
+            <li>Middle-Earth: Shadow of War</li>
+            <li>For Honor</li>
+            <li>Ghost of Tsushima</li>
+            <li>God of War (2018)</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições:</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
