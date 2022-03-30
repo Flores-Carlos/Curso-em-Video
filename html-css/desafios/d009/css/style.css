@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: cyan;
+    margin: 0 20% 20% 20%;
+    text-align: center;
+}
+.voltar{
+    width: 10%;
+}
+ img{
+     width: 49%;
+ }
+
+ iframe{
+     width: 75%;
+ }
