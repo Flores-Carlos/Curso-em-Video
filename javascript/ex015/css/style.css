@@ -1,6 +1,7 @@
 body {
     background: rgb(212, 193, 67);
     font: normal 15pt Arial;
+    margin: auto;
 }
 
 header {
@@ -8,7 +9,7 @@ header {
     text-align: center;
 }
 
-div{
+div {
     text-align: center;
     margin: 15px 0px;
 }
