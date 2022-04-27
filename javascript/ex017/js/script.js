@@ -1,23 +1,21 @@
-function contar() {
-    let contador = document.getElementById("inicio").value
-    let fim = document.getElementById("fim").value
-    let passo = document.getElementById("passo").value
-    let res = document.getElementById("res")
-    if (contador.length == 0 || fim.length == 0 || passo.length == 0) {
-        res.innerHTML = "[ERRO] Faltam dados."
+let res = document.getElementById("res")
+let tab = document.getElementById("selTab")
+tab.style.opacity = 0
+
+function gerarTabuada() {
+    let n = document.getElementById("txtNum").value
+    if (n.length == 0) {
+        res.innerHTML = "[ERRO] Número não digitado."
     } else {
-        res.innerHTML = ""
-        if (Number(contador) < Number(fim)) {
-            for (let i = Number(contador); i <= Number(fim); i += Number(passo)) {
-                res.innerHTML += `${i}`
-                res.innerHTML += (i + Number(passo) <= Number(fim)) ? ", " : "."
-            }
-        }
-        if (Number(contador) > Number(fim)) {
-            for (let i = Number(contador); i >= Number(fim); i -= Number(passo)) {
-                res.innerHTML += `${i}`
-                res.innerHTML += (i - Number(passo) >= Number(fim)) ? ", " : "."
-            }
+        res.innerHTML = "Tabuada: "
+        tab.style.opacity = 1
+        tab.innerHTML = ""
+        n = Number(n)
+        for (let i = 1; i <= 10; i++) {
+            let item = document.createElement("option")
+            item.text = `${n} X ${i} = ${n * i}`
+            item.value = `tab${i}`
+            tab.appendChild(item)
         }
     }
 }
