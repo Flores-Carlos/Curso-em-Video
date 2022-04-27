@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contador</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Início: <br>
+                <input id="inicio" type="number">
+            </p>
+            <p>
+                Fim: <br>
+                <input id="fim" type="number">
+            </p>
+            <p>
+                Passo: <br>
+                <input id="passo" type="number" min="1">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Carlos Flores</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
