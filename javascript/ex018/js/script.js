@@ -12,6 +12,7 @@ function isNumber(n) {
 }
 
 function adicionar() {
+    res.innerHTML = ""
     num[i] = document.getElementById("txtNum").value
 
     if (num[i].length == 0) {
